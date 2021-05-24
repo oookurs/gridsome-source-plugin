@@ -1,0 +1,29 @@
+{
+  "name": "gridsome-source-directus",
+  "version": "0.1.0",
+  "description": "Gridsome Source Plugin для загрузки контента из Directus CMS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oookurs/gridsome-source-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oookurs/gridsome-source-plugin/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "email": "jobsbystr@gmail.com",
+    "name": "Семён Быстров"
+  },
+  "keywords": [
+    "gridsome",
+    "gridsome-plugin",
+    "gridsome-source-plugin",
+    "directus"
+  ],
+  "dependencies": {
+    "@directus/sdk": "^9.0.0-rc.57",
+    "axios": "^0.21.1"
+  }
+}
