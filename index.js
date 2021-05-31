@@ -324,7 +324,7 @@ class DirectusSource {
             const collectionName = typeof refId === 'object' ? this.directusNameToCollectionName[refId.collection] : ref.collectionName;
 
             const dataId = typeof refId === 'object' ? Number.parseInt(refId.item) : refId;
-            if (collectionName && dataId) {
+            if (collectionName && dataId && ref.collectionName.includes(collectionName)) {
               const relatedGSCollectionData = this.GSCollectionsData[collectionName]
 
               if (relatedGSCollectionData && relatedGSCollectionData.hasOwnProperty(dataId)) {
