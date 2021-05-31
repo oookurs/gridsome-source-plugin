@@ -329,7 +329,7 @@ class DirectusSource {
 
               if (relatedGSCollectionData && relatedGSCollectionData.hasOwnProperty(dataId)) {
                 const relatedItem = relatedGSCollectionData[dataId]
-                if (relatedItem.hasOwnProperty(ref.relatedField))
+                if (relatedItem.hasOwnProperty(ref.relatedField) && Array.isArray(relatedItem[ref.relatedField]))
                   relatedItem[ref.relatedField].push(item.id)
                 else
                   relatedItem[ref.relatedField] = [item.id]
